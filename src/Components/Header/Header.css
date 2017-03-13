@@ -1,0 +1,65 @@
+@font-face {
+    font-family: Blacksword;
+    src: url(Blacksword.otf);
+}
+@import url('https://fonts.googleapis.com/css?family=Ranga');
+.navTop {
+  height: 7vh;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 4;
+}
+.navTop ul {
+  list-style: none;
+  display: flex;
+  color: white;
+  padding-top: 15px;
+}
+.navTop ul li {
+  padding-left: 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.navTop ul li:nth-last-child(1) {
+  padding-left: 40%;
+}
+.header {
+  height: 101vh;
+  width: 100%;
+  background-color: rgb(200, 200, 200);
+  border-bottom: 1px solid grey;
+  background-image: url('headImg.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header input {
+  margin: 45% 0 20px 75%;
+  width: 20%;
+  height: 5vh;
+  background-color: rgba(0, 140, 202, 0.5);
+}
+.header p {
+  font-family: 'Ranga', cursive;
+  position: absolute;
+  font-size: 7em;
+  color: white;
+}
+.search {
+  border: none;
+  border-radius: 3px;
+}
+input:focus {
+  outline-color: white;
+  outline-width: 1px;
+}
+input::-webkit-input-placeholder  {
+  color: rgba(255,255,255,.6);
+  padding-left: 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
