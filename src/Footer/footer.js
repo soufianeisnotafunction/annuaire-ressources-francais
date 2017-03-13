@@ -9,7 +9,7 @@ class Footer extends Component {
         <div className="footerMain">
           <div className="footer1">
             <ul className="footer1.1">
-              <li className="list"><FontAwesome name='rocket' />Contact</li>
+              <li className="list"><FontAwesome name='contact' />Contact</li>
               <li className="list">About</li>
               <li className="list">Help</li>
             </ul>
