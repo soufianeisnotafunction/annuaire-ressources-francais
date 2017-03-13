@@ -10,14 +10,18 @@
     "express": "^4.15.2",
     "express-session": "^1.15.1",
     "mongoose": "^4.8.6",
+    "morgan": "^1.8.1",
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
-    "react-dom": "^15.4.2"
+    "react-dom": "^15.4.2",
+    "react-router": "^4.0.0",
+    "react-router-dom": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "dev": "npm run build & node server.js"
   }
 }
