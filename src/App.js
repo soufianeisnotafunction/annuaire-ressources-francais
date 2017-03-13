@@ -1,3 +1,5 @@
+import Header from "./Components/Header/Header";
+import Menu from "./Components/Menu/Menu";
 import React, { Component } from 'react';
 
 
@@ -5,7 +7,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <button type="button" className="btn btn-info">Info</button>
+        <Header />
+        <Menu />
       </div>
     );
   }

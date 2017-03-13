@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald|Roboto|Roboto+Condensed');
+/*a
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+a*/
+body {
+  background-color: rgb(235,235,235);
+  height: 2000px;
+}
+p {margin: 0;padding: 0;}
+.contMenu {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu {
+  margin-top: 3vh;
+  width: 80%;
+  height: 50px;
+}
+.Sort {
+  height: 50px;
+  width:100%;
+  background-color: #FAFAFA;
+  border-bottom: solid rgb(220,220,220) 1px;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*MENU DEROULANT*/
+
+#menu, #menu ul{
+  padding:0;
+  margin:0;
+  list-style:none;
+}
+#menu li{
+  display:inline-block;
+  position:relative;
+  padding: 0 14.2vh 0 14.2vh;
+
+}
+#menu ul li{
+  display:inherit;
+  border-radius:0;
+}
+#menu ul li:hover{
+  border-radius:0;
+}
+#menu ul li:last-child{
+  border-radius:0 0 8px 8px;
+}
+#menu ul{
+  position:absolute;
+  z-index: 1000;
+  max-height:0;
+  left: 0;
+  right: 0;
+  overflow:hidden;
+  width: 40vh;
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: 1px 1px 1px rgb(200,200,200);
+  background-color: #FAFAFA;
+}
+#menu li:hover ul{
+  max-height:15em;
+}
+/* background des liens menus */
+#menu li {
+  background-color: white;
+  /*background-color: #FAFAFA;*/
+}
+/* les a href */
+#menu a{
+  text-decoration:none;
+  display:block;
+  padding:8px 10px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #008CCA;
+  font-size: 1.2em;
+}
+.menu .title:after {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 28%;
+  content: '';
+  width: 1px;
+  height: 30px;
+  transform: translate3d(0,-50%,0);
+  background: rgb(180, 180, 180);
+}
+#menu ul a{
+  padding:8px 0;
+}
+#menu li:hover li a{
+  color:grey;
+  text-transform:inherit;
+}
+.backLi {
+  width: 280px;
+  margin-left: -100px;
+}
+.backLi:hover {
+}
+.backLi p{
+  padding: 0 0 0 20px;
+}
+#menu li:hover a, #menu li li:hover a{
+  color:#000;
+}
+#menu li:nth-child(2) li:nth-child(1) a{margin-top: 30px;}
+#menu li:nth-child(3) li:nth-child(1) a{margin-top: 30px;}
+#menu li:nth-child(4) li:nth-child(1) a{margin-top: 30px;}
+#menu li:nth-child(5) li:nth-child(1) a{margin-top: 30px;}
+#menu li:nth-child(1) li:hover:nth-child(2) a{background-color:green;transition: .6s;}
+#menu li:nth-child(1) li:hover:nth-child(3) a{background-color:orange;transition: .6s}
+#menu li:nth-child(1) li:hover:nth-child(4) a{background-color:red;transition: .6s}
+#menu li:nth-child(2) li:hover:nth-child(2) a{background-color:green;transition: .6s}
+#menu li:nth-child(2) li:hover:nth-child(3) a{background-color:orange;transition: .6s}
+#menu li:nth-child(2) li:hover:nth-child(4) a{background-color:red;transition: .6s}
+
+.imgMenu1, .imgMenu2 {
+  position: absolute;
+  z-index: 40;
+  height: 80px;
+  width: auto;
+  margin: 3vh 0 0 60%;
+  border-radius: 50%;
+}
+.imgMenu1{margin: 3vh 0 0 60%;}
+.imgMenu2{margin: 0 0 0 60%;}
