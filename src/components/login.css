@@ -1,0 +1,14 @@
+.login{
+    height: 200px;
+    border:1px black solid;
+    padding: 0;
+}
+input{
+    width: 70%;
+
+}
+.email{
+    height: 50%;
+    width: 100%;
+    background-color: blue;
+}
