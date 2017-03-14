@@ -8,25 +8,42 @@ import Login from './Components/admin/Login';
 
 
 class App extends Component {
-  constructor(){
-    super();
-    this.state = { data:[]}
+  constructor(props){
+    super(props);
+    this.state = {data:[]}
 
   }
   componentDidMount(){
-    fetch('http://localhost:8080/api/ress')
-            .then(result=> {
-                this.setState({data:[result.json()]});
-            });
-    }
+    // `${window.location.pathname}/api/res`
+    fetch(`${window.location.origin}/api/ress`)
+    .then((res) =>{
+      return res.json();
+    })
+    .then((json) =>{
+      this.setState({
+        data:json
+      });
+    });
+  }
+
+  renderCards(){
+    return this.state.data.map((el, i) => {
+      return(
+       <Cards img={el.img} titre={el.titre} niveau={el.niveau} age={el.age} format={el.format} langue={el.langue} description={el.description} thumbnails={el.thumbnails} />
+      )
+    })
+  }
   render() {
-console.log(this.state.data);
+// console.log(this.state.data);
+console.log(this.state.data[0]);
+let cards = this.renderCards();
     return (
 
       <div className="App">
         <Header />
         <Menu />
         <Cards />
+        {cards}
       </div>
 
 

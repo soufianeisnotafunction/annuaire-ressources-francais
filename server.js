@@ -40,7 +40,16 @@ router.route('/ress')
 .post(function(req, res) {
         
         var ressources = new ressourcesHolder();      // create a new instance of the Bear model
-        ressources.titre = req.body.titre;  // set the ressources name (comes from the request)
+        ressources.img = req.body.img; 
+		ressources.titre = req.body.titre; 
+		ressources.niveau = req.body.niveau; 
+		ressources.age = req.body.age; 
+		ressources.format = req.body.format; 
+		ressources.langue = req.body.langue; 
+		ressources.description = req.body.description; 
+		ressources.thumbnails = req.body.thumbnails; 
+		 // set the ressources name (comes from the request)
+
 
         // save the bear and check for errors
         ressources.save(function(err) {
@@ -78,7 +87,14 @@ router.route('/ress')
             if (err)
                 res.send(err);
 
-            ressources.titre = req.body.titre;  // update the ressources's info
+        ressources.img = req.body.img; 
+		ressources.titre = req.body.titre; 
+		ressources.niveau = req.body.niveau; 
+		ressources.age = req.body.age; 
+		ressources.format = req.body.format; 
+		ressources.langue = req.body.langue; 
+		ressources.description = req.body.description; 
+		ressources.thumbnails = req.body.thumbnails;   // update the ressources's info
 
             // save the ressources
             ressources.save(function(err) {
