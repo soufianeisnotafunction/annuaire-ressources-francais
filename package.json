@@ -3,7 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-scripts": "0.9.4"
+    "react-redux": "^5.0.3",
+    "react-router": "^4.0.0",
+    "react-router-redux": "^5.0.0-alpha.3",
+    "react-scripts": "0.9.4",
+    "redux": "^3.6.0"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
@@ -14,9 +18,16 @@
     "react": "^15.4.2",
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.4.2",
+<<<<<<< HEAD
     "react-fontawesome": "^1.5.0",
+=======
+    "react-redux": "^5.0.3",
+>>>>>>> a45aec40f8576309a94be578f6f7fc1abcd1d880
     "react-router": "^4.0.0",
-    "react-router-dom": "^4.0.0"
+    "react-router-dom": "^4.0.0",
+    "redux": "^3.6.0",
+    "redux-devtools-extension": "^2.13.0",
+    "redux-thunk": "^2.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
