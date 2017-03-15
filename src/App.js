@@ -1,11 +1,15 @@
-import Header from "./Components/Header/Header";
-import Menu from "./Components/Menu/Menu";
+import Header from "./components/Header/Header";
+import Menu from "./components/Menu/Menu";
 import React, { Component } from 'react';
 import Cards from './components/Cards.jsx';
+<<<<<<< HEAD
 import Login from './components/admin/Login.jsx';
 import Footer from './Footer/footer.js';
 import Card from './components/Cards.jsx';
 import Login from './components/admin/Login.jsx';
+=======
+import Login from './components/admin/Login';
+>>>>>>> 85b98e96873db270835de98b9079134d54b6e899
 // import { Link} from 'react-router';
 
 
@@ -16,7 +20,7 @@ class App extends Component {
 
   }
   componentDidMount(){
-    // `${window.location.pathname}/api/res`
+
     fetch(`${window.location.origin}/api/ress`)
     .then((res) =>{
       return res.json();
