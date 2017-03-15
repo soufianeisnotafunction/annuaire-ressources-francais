@@ -1,8 +1,8 @@
-import Header from "./Components/Header/Header";
-import Menu from "./Components/Menu/Menu";
+import Header from "./components/Header/Header";
+import Menu from "./components/Menu/Menu";
 import React, { Component } from 'react';
-import Cards from './Components/Cards.jsx';
-import Login from './Components/admin/Login';
+import Cards from './components/Cards.jsx';
+import Login from './components/admin/Login';
 // import { Link} from 'react-router';
 
 
@@ -14,7 +14,7 @@ class App extends Component {
 
   }
   componentDidMount(){
-    // `${window.location.pathname}/api/res`
+
     fetch(`${window.location.origin}/api/ress`)
     .then((res) =>{
       return res.json();
