@@ -1,16 +1,12 @@
 import Header from "./Components/Header/Header";
 import Menu from "./Components/Menu/Menu";
 import React, { Component } from 'react';
-<<<<<<< HEAD
 import Cards from './components/Cards.jsx';
 import Login from './components/admin/Login';
 import Footer from './Footer/footer.js';
-=======
-import Cards from './Components/Cards.jsx';
+import Cards from './components/Cards.jsx';
 import Login from './Components/admin/Login';
 // import { Link} from 'react-router';
-
->>>>>>> a45aec40f8576309a94be578f6f7fc1abcd1d880
 
 
 class App extends Component {
@@ -49,11 +45,7 @@ let cards = this.renderCards();
         <Header />
         <Menu />
         <Cards />
-<<<<<<< HEAD
-        <Footer></Footer>
-=======
-        {cards}
->>>>>>> a45aec40f8576309a94be578f6f7fc1abcd1d880
+        <Footer />
       </div>
 
 
