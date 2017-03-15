@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 import { Router, Route, hashHistory } from 'react-router';
-import Login from './Components/admin/Login.jsx';
+import Login from './components/admin/Login.jsx';
 
 ReactDOM.render((
   <Router history={hashHistory}>
