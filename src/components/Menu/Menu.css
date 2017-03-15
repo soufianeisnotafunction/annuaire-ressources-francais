@@ -7,6 +7,7 @@ font-family: 'Roboto Condensed', sans-serif;
 a*/
 body {
   background-color: rgb(235,235,235);
+  overflow-x: hidden;
   height: 2000px;
 }
 p {margin: 0;padding: 0;}
@@ -24,15 +25,20 @@ p {margin: 0;padding: 0;}
 .Sort {
   height: 50px;
   width:100%;
-  background-color: #FAFAFA;
+  background-color: white;
   border-bottom: solid rgb(220,220,220) 1px;
   margin-top: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /*MENU DEROULANT*/
-
+#menu {
+  width: 900px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
 #menu, #menu ul{
   padding:0;
   margin:0;
@@ -41,8 +47,6 @@ p {margin: 0;padding: 0;}
 #menu li{
   display:inline-block;
   position:relative;
-  padding: 0 12.7vh 0 12.7vh;
-
 }
 #menu ul li{
   display:inherit;
@@ -72,7 +76,6 @@ p {margin: 0;padding: 0;}
 /* background des liens menus */
 #menu li {
   background-color: white;
-  /*background-color: #FAFAFA;*/
 }
 /* les a href */
 #menu a{
@@ -83,10 +86,10 @@ p {margin: 0;padding: 0;}
   color: #008CCA;
   font-size: 1.2em;
 }
-.menu .title:after {
+.title:after {
   position: absolute;
   margin-top: 15px;
-  margin-left: 28%;
+  margin-left: 90%;
   content: '';
   width: 1px;
   height: 30px;
@@ -102,7 +105,7 @@ p {margin: 0;padding: 0;}
 }
 .backLi {
   width: 300px;
-  margin-left: -100px;
+  margin-left: 0px;
 }
 .backLi:hover {
 }
