@@ -2,10 +2,10 @@ import Header from "./Components/Header/Header";
 import Menu from "./Components/Menu/Menu";
 import React, { Component } from 'react';
 import Cards from './components/Cards.jsx';
-import Login from './components/admin/Login';
+import Login from './components/admin/Login.jsx';
 import Footer from './Footer/footer.js';
-import Cards from './components/Cards.jsx';
-import Login from './Components/admin/Login';
+import Card from './components/Cards.jsx';
+import Login from './components/admin/Login.jsx';
 // import { Link} from 'react-router';
 
 
