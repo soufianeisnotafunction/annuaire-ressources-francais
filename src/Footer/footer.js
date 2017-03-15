@@ -12,7 +12,7 @@ class Footer extends Component {
               <h4><b>FRENCH STATION</b></h4>
               <li className="list0">Any other questions?</li>
               <li className="list">+33 763528946</li>
-              <li className="list0">2017 francaise</li>
+              <li className="list0">2017 French</li>
             </ul>
           </div>
           <div className="footer2">
