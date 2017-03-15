@@ -1,9 +1,26 @@
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './App';
+// import './index.css';
+//
+// ReactDOM.render(
+//   <App />,
+//   document.getElementById('root')
+// );
+
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
+import { Router, Route, hashHistory } from 'react-router';
+import Login from './Components/admin/Login.jsx';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+
+ReactDOM.render((
+  <Router history={hashHistory}>
+    <Route path="/" component={App}/>
+    {/* add the routes here */}
+    <Route path="/Login" component={Login}/>
+  </Router>
+), document.getElementById('root'))

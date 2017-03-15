@@ -34,7 +34,7 @@ class Menu extends React.Component {
             <li><a href="#" className="backLi"><p>App</p></a></li>
           </ul>
         </li>
-          <li><a className="title" href="#">LANGUE</a>
+          <li><a href="#">LANGUE</a>
           <ul>
             <img className="imgMenu2" src="http://img4.hostingpics.net/pics/838179langImg.jpg"></img>
             <li><a href="#" className="backLi"><p>Francais</p></a></li>
