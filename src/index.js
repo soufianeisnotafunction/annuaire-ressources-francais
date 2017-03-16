@@ -4,12 +4,13 @@ import App from './App';
 import './index.css';
 import { Router, Route, hashHistory } from 'react-router';
 import Login from './components/admin/Login.jsx';
+import Dashboard from './components/admin/Dashboard.jsx'
 import Form from './components/Form/Form.jsx';
+
 
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}/>
-    {/* add the routes here */}
     <Route path="/Login" component={Login}/>
     <Route path="/Form" component={Form}/>
   </Router>

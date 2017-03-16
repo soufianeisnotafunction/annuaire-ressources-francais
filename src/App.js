@@ -2,9 +2,8 @@ import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import React, { Component } from 'react';
 import Cards from './components/Cards.jsx';
-import Login from './components/admin/Login';
-import Form from './components/Form/Form';
-// import { Link} from 'react-router';
+
+
 
 
 
@@ -43,7 +42,6 @@ let cards = this.renderCards();
       <div className="App">
         <Header />
         <Menu />
-        <Cards />
         {cards}
       </div>
 
