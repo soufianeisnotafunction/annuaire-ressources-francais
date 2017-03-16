@@ -4,11 +4,13 @@ import App from './App';
 import './index.css';
 import { Router, Route, hashHistory } from 'react-router';
 import Login from './components/admin/Login.jsx';
+import Dashboard from './components/admin/Dashboard.jsx'
 
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}/>
-    {/* add the routes here */}
     <Route path="/Login" component={Login}/>
+    
+
   </Router>
 ), document.getElementById('root'))

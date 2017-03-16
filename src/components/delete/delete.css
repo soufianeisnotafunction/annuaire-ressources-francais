@@ -1,0 +1,25 @@
+.delete-card{
+    height: auto;
+    width: 40%;
+    border: 1px #EBEBEB solid;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+    .delete-title{
+        height: auto;
+        width: 100%;
+        background-color:#0881a3;
+    }
+    .card-block{
+        width: 100%;
+    }
+    .trash-input{
+        height: auto;
+        width:60%;
+    }
+        .trash{
+            height: auto;
+            width:1.2em;
+        }
