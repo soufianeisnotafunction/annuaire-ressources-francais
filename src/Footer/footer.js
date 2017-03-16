@@ -26,8 +26,8 @@ class Footer extends Component {
           <div className="footer3">
             <ul className="footer31">
               <li className="list3"><img className="imgFoot" src="http://www.clga.ca/sites/default/files/icons/twitter%20button.png" alt="Twitter"/></li>
-              <li className="list3"><img className="imgFoot1" src="https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1.png" alt="Facebook"/></li>
-              <li className="list3"><img className="imgFoot2" src="https://www.lehigh.edu/google/google_search.png" alt="Google"/></li>
+              <li className="list3"><img className="imgFoot" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Facebook_icon.svg/120px-Facebook_icon.svg.png" alt="Facebook"/></li>
+              <li className="list3"><img className="imgFoot" src="https://www.lehigh.edu/google/google_search.png" alt="Google"/></li>
             </ul>
           </div>
         </div>
