@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import Cards from './components/Cards.jsx';
 import Login from './components/admin/Login';
 import Form from './components/Form/Form';
+import Plateform from './components/Plateform/Plateform';
 // import { Link} from 'react-router';
 
 
