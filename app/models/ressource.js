@@ -9,7 +9,9 @@ const resSchema = new Schema({
   format:      { type: String, required: true },
   langue:      { type: String, required: true },
   description: { type: String, required: true },
-  thumbnails:  { type: Array, required: true }
+  thumbnails1: { type: String, required: true },
+  thumbnails2: { type: String, required: true },
+  thumbnails3: { type: String, required: true }
 });
 
 module.exports = mongoose.model('Bear', resSchema);

@@ -8,7 +8,7 @@ const ressourcesHolder = require('./app/models/ressource.js');
 const db         = "mongodb://admin:root@ds123370.mlab.com:23370/ressources/";
 // const options    = { server: { socketOptions: { keepAlive: 300000, connectTimeoutMS: 30000 } },
 //                 		replset: { socketOptions: { keepAlive: 300000, connectTimeoutMS : 30000 } } };
-const port = process.env.PORT || 8080; 
+const port = process.env.PORT || 8080;
 //===== DB CONNECTION======//
 mongoose.connect(db);
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -28,26 +28,28 @@ router.use(function(req, res, next) {
 
 app.use(express.static('build'));
 
-app.get('/home' , (req,res) => {
+app.get('/' , (req,res) => {
 	res.sendFile(`${process.cwd()}/build/index.html`)
 })
 // router.get('/' , (req,res) => {
 // 	// res.sendFile(`${process.cwd()}/build/index.html`)
-// 	res.json({ message: 'hooray! welcome to our api!' });   
+// 	res.json({ message: 'hooray! welcome to our api!' });
 // })
 
 router.route('/ress')
 .post(function(req, res) {
-        
+
         var ressources = new ressourcesHolder();      // create a new instance of the Bear model
-        ressources.img = req.body.img; 
-		ressources.titre = req.body.titre; 
-		ressources.niveau = req.body.niveau; 
-		ressources.age = req.body.age; 
-		ressources.format = req.body.format; 
-		ressources.langue = req.body.langue; 
-		ressources.description = req.body.description; 
-		ressources.thumbnails = req.body.thumbnails; 
+        ressources.img = req.body.img;
+		ressources.titre = req.body.titre;
+		ressources.niveau = req.body.niveau;
+		ressources.age = req.body.age;
+		ressources.format = req.body.format;
+		ressources.langue = req.body.langue;
+		ressources.description = req.body.description;
+		ressources.thumbnails1 = req.body.thumbnails1;
+    ressources.thumbnails2 = req.body.thumbnails2;
+    ressources.thumbnails3 = req.body.thumbnails3;
 		 // set the ressources name (comes from the request)
 
 
@@ -58,7 +60,7 @@ router.route('/ress')
 
             res.json({ message: 'Ressource created!' });
         });
-        
+
     })
 	.get(function(req, res) {
         ressourcesHolder.find(function(err, ressources) {
@@ -87,14 +89,16 @@ router.route('/ress')
             if (err)
                 res.send(err);
 
-        ressources.img = req.body.img; 
-		ressources.titre = req.body.titre; 
-		ressources.niveau = req.body.niveau; 
-		ressources.age = req.body.age; 
-		ressources.format = req.body.format; 
-		ressources.langue = req.body.langue; 
-		ressources.description = req.body.description; 
-		ressources.thumbnails = req.body.thumbnails;   // update the ressources's info
+        ressources.img = req.body.img;
+		ressources.titre = req.body.titre;
+		ressources.niveau = req.body.niveau;
+		ressources.age = req.body.age;
+		ressources.format = req.body.format;
+		ressources.langue = req.body.langue;
+		ressources.description = req.body.description;
+    ressources.thumbnails1 = req.body.thumbnails1;
+    ressources.thumbnails2 = req.body.thumbnails2;
+    ressources.thumbnails3 = req.body.thumbnails3;   // update the ressources's info
 
             // save the ressources
             ressources.save(function(err) {

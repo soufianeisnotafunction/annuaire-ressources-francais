@@ -7,10 +7,10 @@ import img from './img/visu.jpg';
 export default class Cards extends Component {
 
   render() {
-      const {img, titre, niveau, age, format, langue, description, thumbnails} = this.props;
+      const {img, titre, niveau, age, format, langue, description, thumbnails1 , thumbnails2, thumbnails3  , key , id } = this.props;
     return (
         <div className="container">
-            <div className="panel-group  flex-column justify-content-between col-md-9" id="accordion">
+            <div className="panel-group  flex-column justify-content-between col-md-9" id={`accordion${id}`}>
               <div className="panel panel-default">
                 <div className="panel-heading justify-content-between ">
                     <div className="img-title d-flex justify-content-between">
@@ -19,7 +19,7 @@ export default class Cards extends Component {
                         </div>
                         <div className="title flex-wrap text-center  ">
                             <h4 className="panel-title ">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">{titre}</a>
+                                <a data-toggle="collapse" data-parent={`#accordion${id}`} href={`#collapse${id}`}>{titre}</a>
                             </h4>
                             <div className='items d-flex d-flex align-items-center'>
                                 <div className=" row sub-title justify-content-between  ">
@@ -32,18 +32,18 @@ export default class Cards extends Component {
                         </div>
                     </div>
                 </div>
-                <div id="collapse1" className="panel-collapse collapse in">
+                <div id={`collapse${id}`} className="panel-collapse collapse in">
                   <div className="panel-body d-flex justify-content-center flex-wrap justify-content-center ">
                         <div className="three-img d-flex justify-content-around align-items-center ">
-                            <img src={thumbnails} className=" grid justify-content-between img-responsive" alt="Logo" />
-                            <img src={thumbnails} className=" grid justify-content-between img-responsive" alt="Logo" />
-                            <img src={thumbnails} className=" grid justify-content-between img-responsive" alt="Logo" />
+                            <img src={thumbnails1} className=" grid justify-content-between img-responsive" alt="Logo" />
+                            <img src={thumbnails2} className=" grid justify-content-between img-responsive" alt="Logo" />
+                            <img src={thumbnails3} className=" grid justify-content-between img-responsive" alt="Logo" />
                         </div>
                         <p className="text-left descriptif ">{description}</p>
                   </div>
                 </div>
               </div>
-             
+
         </div>
   </div>
     );
