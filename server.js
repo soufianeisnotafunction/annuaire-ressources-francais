@@ -54,9 +54,10 @@ router.route('/ress')
             if (err)
                 res.send(err);
 
-            res.json({
-                message: 'Ressource created!'
-            });
+            // res.json({
+            //     message: 'Ressource created!'
+            // });
+            res.sendFile(path.join(__dirname + '/add.html'));
         });
 
     })
@@ -103,9 +104,7 @@ router.route('/ress/:ressources_id')
                 if (err)
                     res.send(err);
 
-                res.json({
-                    message: 'Ressources updated!'
-                });
+                res.sendFile(path.join(__dirname + '/updated.html'));
             });
 
         });
@@ -117,9 +116,7 @@ router.route('/ress/:ressources_id')
             if (err)
                 res.send(err);
 
-            res.json({
-                message: 'Ressource successfully deleted'
-            });
+            res.sendFile(path.join(__dirname + '/deleted.html'));
         });
     });
 
