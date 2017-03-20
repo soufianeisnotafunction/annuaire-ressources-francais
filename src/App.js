@@ -1,11 +1,14 @@
 import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import React, { Component } from 'react';
+import Footer from './Footer/footer.js';
 import Cards from './components/Cards.jsx';
+
 import Login from './components/admin/Login';
 import Form from './components/Form/Form';
 import Plateform from './components/Plateform/Plateform';
 // import { Link} from 'react-router';
+
 
 
 
@@ -47,6 +50,7 @@ let cards = this.renderCards();
         <Header />
         <Menu />
         {cards}
+        <Footer />
       </div>
 
 
