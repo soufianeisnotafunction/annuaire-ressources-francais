@@ -36,7 +36,7 @@ class App extends Component {
   renderCards(){
     return this.state.data.map((el, i) => {
       return(
-       <Cards key={i} id={i} img={el.img} titre={el.titre} niveau={el.niveau} age={el.age} format={el.format} langue={el.langue} description={el.description} thumbnails1={el.thumbnails1} thumbnails2={el.thumbnails2} thumbnails2={el.thumbnails2}  />
+       <Cards key={i} id={i} img={el.img} titre={el.titre} niveau={el.niveau} age={el.age} format={el.format} langue={el.langue} description={el.description} thumbnails1={el.thumbnails1} thumbnails2={el.thumbnails2} thumbnails3={el.thumbnails3}  />
       )
     })
   }
