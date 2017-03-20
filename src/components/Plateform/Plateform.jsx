@@ -5,17 +5,16 @@ import { Link } from 'react-router'
 const Plateform = () => (
   <div className="container mt-4 ">
     <div className="row justify-content-center ">
-      <form action="/api/ress" method="post" className="form-signin col-10 col-sm-8 col-md-6 col-lg-4 ">
+      <form  className="form-signin col-10 col-sm-8 col-md-6 col-lg-4 ">
         <h2 className="form-signin-heading mb-4 text-center">
           Choose how you want to do
         </h2>
-        <button className="btn btn-lg btn-primary btn-block" type="submit">
-          <Link to="/Form">Send</Link>
-        </button>
-        <button className="btn btn-lg btn-primary btn-block" type="submit">
+        <Link to="/form"><button className="btn btn-lg btn-primary btn-block mb-2" >Send</button></Link>
+
+        <button className="btn btn-lg btn-primary btn-block" >
           Edit
         </button>
-        <button className="btn btn-lg btn-primary btn-block" type="submit">
+        <button className="btn btn-lg btn-primary btn-block" >
           Delete
         </button>
       </form>
