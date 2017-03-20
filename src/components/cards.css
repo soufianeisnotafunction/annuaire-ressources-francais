@@ -1,3 +1,10 @@
+body{
+  height: 2000px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
 .panel-heading {
     margin-top: 20vh;
     background-color: #F5F5F5;
@@ -6,70 +13,63 @@
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 1em;
 }
-
 .img-title {
     width: 90%;
 }
-
 .img-principal {
     width: 25%;
     border: none;
 }
-
 .img {
     height: auto;
     margin: 0;
     width: 100% \9;
 }
-
 .title {
     width: 90%;
     margin-left: 20px;
 }
-
 .panel-title {
     margin-top: 3%;
 }
-
+.panel-title p {
+  color: rgb(204, 57, 62);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 h4 a:focus, a:hover {
     text-decoration: none;
 }
-
 a {
     color: black;
 }
-
+.arrow {
+  height: 3%;
+  width: 3%;
+}
 .items {
     width: 100%;
     height: 50%;
 }
-
 .sub-title {
     width: 100%;
-    border: 1px solid grey;
 }
-
 .holla {
     margin-left: 50px;
     width: 100%;
 }
-
 .sub-title h5 {
     margin-top: 5px;
 }
-
 .sub-title h5:nth-child(1) {
     margin-left: 5%;
 }
-
 .sub-title h5:nth-last-child(1) {
     margin-right: 5%;
 }
-
 h5:hover {
     color: #35bcbf;
 }
-
 .panel-body {
     border: 1px #DDD solid;
     border-radius: 2px;
@@ -77,19 +77,17 @@ h5:hover {
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 0.9em;
 }
-
 .three-img {
     width: 50%;
     height: auto;
     width: 100% \9;
 }
-
 .grid {
     height: auto;
     width: 25%;
     margin-top: 5px;
 }
-
 .descriptif {
     width: 90%;
+    text-align: center;
 }
