@@ -1,11 +1,10 @@
 import Header from "./components/Header/Header";
 import Menu from "./components/Menu/Menu";
 import React, { Component } from 'react';
-import Login from './components/admin/Login';
 import Footer from './Footer/footer.js';
 import Cards from './components/Cards.jsx';
 
-// import { Link} from 'react-router';
+
 
 
 class App extends Component {
@@ -15,7 +14,7 @@ class App extends Component {
 
   }
   componentDidMount(){
-    // `${window.location.pathname}/api/res`
+  
     fetch(`${window.location.origin}/api/ress`)
     .then((res) =>{
       return res.json();
