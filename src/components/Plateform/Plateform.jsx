@@ -9,9 +9,8 @@ const Plateform = () => (
         <h2 className="form-signin-heading mb-4 text-center">
           Choose how you want to do
         </h2>
-        <button className="btn btn-lg btn-primary btn-block" >
-          <Link to="/form">Send</Link>
-        </button>
+        <Link to="/form"><button className="btn btn-lg btn-primary btn-block mb-2" >Send</button></Link>
+
         <button className="btn btn-lg btn-primary btn-block" >
           Edit
         </button>
