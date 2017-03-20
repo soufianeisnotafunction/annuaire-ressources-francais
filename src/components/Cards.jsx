@@ -9,7 +9,7 @@ export default class Cards extends Component {
   render() {
       const {img, titre, niveau, age, format, langue, description, thumbnails1 , thumbnails2, thumbnails3  , key , id } = this.props;
     return (
-        <div className="container">
+        <div className="containerCards">
             <div className="panel-group  flex-column justify-content-between col-md-9" id={`accordion${id}`}>
               <div className="panel panel-default">
                 <div className="panel-heading justify-content-between ">

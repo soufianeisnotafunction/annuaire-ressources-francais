@@ -1,7 +1,7 @@
 body{
   height: 2000px;
 }
-.container {
+.containerCards {
   display: flex;
   justify-content: center;
 }
