@@ -12,10 +12,10 @@ class Delete extends React.Component {
   render() {
     const {titre } = this.props;
     return (
-        <div className="card-block mb-4">
+        <div className=" card card-block mt-4 mb-4 col-sm-8 col-md-6 col-lg-4">
 
-            <h2 className='text-center'>{titre}</h2>
-            <button onClick={() =>this.deleteUser()} className="btn btn-danger">Danger</button>
+            <h2 className='text-center'>{titre}</h3>
+            <button onClick={() =>this.deleteUser()} className="btn btn-danger">Delete</button>
 
         </div>
 

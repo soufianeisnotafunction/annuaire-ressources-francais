@@ -34,7 +34,7 @@ class DeleteList extends React.Component {
   render() {
     let list = this.renderCards();
     return (
-      <div>
+      <div className='justify-content-center'>
           {list}
       </div>
     );
