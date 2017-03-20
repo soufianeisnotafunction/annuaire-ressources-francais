@@ -19,7 +19,7 @@ export default class Cards extends Component {
                         </div>
                         <div className="title flex-wrap text-center  ">
                             <h4 className="panel-title ">
-                                <a data-toggle="collapse" data-parent={`#accordion${id}`} href={`#collapse${id}`}>{titre}</a>
+                              <p>{titre} <a data-toggle="collapse" data-parent={`#accordion${id}`} href={`#collapse${id}`}><img className="arrow" src="https://www.smartbracket.io/images/down%20arrow.png"/></a></p>
                             </h4>
                             <div className='items d-flex d-flex align-items-center'>
                                 <div className=" row sub-title justify-content-between  ">
