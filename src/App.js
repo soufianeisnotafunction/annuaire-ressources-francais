@@ -7,7 +7,8 @@ import Cards from './components/Cards.jsx';
 import Login from './components/admin/Login';
 import Form from './components/Form/Form';
 import Plateform from './components/Plateform/Plateform';
-// import { Link} from 'react-router';
+
+
 
 
 
@@ -41,8 +42,6 @@ class App extends Component {
     })
   }
   render() {
-// console.log(this.state.data);
-console.log(this.state.data[0]);
 let cards = this.renderCards();
     return (
 

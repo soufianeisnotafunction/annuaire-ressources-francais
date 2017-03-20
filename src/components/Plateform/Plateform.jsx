@@ -11,12 +11,10 @@ const Plateform = () => (
         </h2>
         <Link to="/form"><button className="btn btn-lg btn-primary btn-block mb-2" >Send</button></Link>
 
-        <button className="btn btn-lg btn-primary btn-block" >
+        <button className="btn btn-lg btn-primary btn-block mb-2" >
           Edit
         </button>
-        <button className="btn btn-lg btn-primary btn-block" >
-          Delete
-        </button>
+      <Link to="/delete"><button className="btn btn-lg btn-primary btn-block mb-2" >Delete</button></Link>
       </form>
     </div>
 
