@@ -14,4 +14,4 @@ const resSchema = new Schema({
   thumbnails3: { type: String, required: true }
 });
 
-module.exports = mongoose.model('Bear', resSchema);
+module.exports = mongoose.model('Ressources', resSchema);

@@ -19,6 +19,8 @@ app.use(bodyParser.json());
 const router = express.Router();
 // router.use(express.static('build'));
 
+app.use('/api', router);
+
 router.use(function(req, res, next) {
     // do logging
     console.log('Something is happening.');
@@ -28,9 +30,6 @@ router.use(function(req, res, next) {
 
 app.use(express.static('build'));
 
-// app.get('/', (req, res) => {
-//     res.sendFile(`${process.cwd()}/build/index.html`)
-// })
 
 
 router.route('/ress')
@@ -126,7 +125,7 @@ router.route('/ress/:ressources_id')
 
 
 
-app.use('/api', router);
+
 
 
 app.listen(port);
