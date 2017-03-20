@@ -30,6 +30,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "dev": "npm run build & node server.js"
+    "dev": "npm run build && node server.js"
+  },
+  "engine": {
+    "node":"7.7.2"
   }
 }

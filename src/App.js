@@ -4,17 +4,24 @@ import React, { Component } from 'react';
 import Footer from './Footer/footer.js';
 import Cards from './components/Cards.jsx';
 
+import Login from './components/admin/Login';
+import Form from './components/Form/Form';
+import Plateform from './components/Plateform/Plateform';
+// import { Link} from 'react-router';
+
 
 
 
 class App extends Component {
   constructor(props){
     super(props);
-    this.state = {data:[]}
+    this.state = {
+      data:[]
+    }
 
   }
   componentDidMount(){
-  
+
     fetch(`${window.location.origin}/api/ress`)
     .then((res) =>{
       return res.json();
@@ -29,7 +36,7 @@ class App extends Component {
   renderCards(){
     return this.state.data.map((el, i) => {
       return(
-       <Cards img={el.img} titre={el.titre} niveau={el.niveau} age={el.age} format={el.format} langue={el.langue} description={el.description} thumbnails={el.thumbnails} />
+       <Cards key={i} id={i} img={el.img} titre={el.titre} niveau={el.niveau} age={el.age} format={el.format} langue={el.langue} description={el.description} thumbnails1={el.thumbnails1} thumbnails2={el.thumbnails2} thumbnails2={el.thumbnails2}  />
       )
     })
   }

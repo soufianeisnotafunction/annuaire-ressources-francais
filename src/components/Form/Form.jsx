@@ -70,13 +70,31 @@ const Form = () => (
           placeholder="Description"
           required
         />
-        <label for="inputThumbnails" className="sr-only">Thumbnails</label>
+      <label for="inputThumbnails" className="sr-only">Thumbnails 1</label>
         <input
-          name="thumbnails"
+          name="thumbnails1"
           type="text"
-          id="inputThumbnails"
+          id="inputThumbnails1"
           className="form-control mb-4"
-          placeholder="Thumbnails"
+          placeholder="Thumbnails 1"
+          required
+        />
+      <label for="inputThumbnails" className="sr-only">Thumbnails 2</label>
+        <input
+          name="thumbnails2"
+          type="text"
+          id="inputThumbnails2"
+          className="form-control mb-4"
+          placeholder="Thumbnails 2"
+          required
+        />
+      <label for="inputThumbnails" className="sr-only">Thumbnails 3</label>
+        <input
+          name="thumbnails3"
+          type="text"
+          id="inputThumbnails3"
+          className="form-control mb-4"
+          placeholder="Thumbnails 3"
           required
         />
         <button className="btn btn-lg btn-primary btn-block" type="submit">
