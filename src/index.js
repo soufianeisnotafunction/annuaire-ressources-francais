@@ -10,9 +10,8 @@ import Plateform from './components/Plateform/Plateform.jsx';
 ReactDOM.render((
   <Router history={hashHistory}>
     <Route path="/" component={App}/>
-    {/* add the routes here */}
-    <Route path="/Login" component={Login}/>
-    <Route path="/Form" component={Form}/>
-    <Route path="/Plateform" component={Plateform}/>
+    <Route path="/login" component={Login}/>
+    <Route path="/form" component={Form}/>
+    <Route path="/plateform" component={Plateform}/>
   </Router>
 ), document.getElementById('root'))
