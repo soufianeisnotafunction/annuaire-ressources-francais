@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router'
 
 const Login = () => (
   <div className="container mt-4 ">
@@ -24,9 +25,8 @@ const Login = () => (
           placeholder="Mot de passe"
           required
         />
-        <button className="btn btn-lg btn-primary btn-block" type="submit">
-          Connexion
-        </button>
+
+      <Link to="/plateform"><button className="btn btn-lg btn-primary btn-block mb-2" type="submit" >Connexion</button></Link>
       </form>
     </div>
 
