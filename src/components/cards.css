@@ -7,8 +7,6 @@ body{
 }
 .panel-heading {
     margin-top: 20vh;
-    /*border: 4px black solid;*/
-    /*border-bottom: 2px black solid;*/
     background-color: #F5F5F5;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
